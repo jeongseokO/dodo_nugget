@@ -3,9 +3,10 @@ import yaml
 from nugget.codec.nugget_trainer import NuggetTrainer
 from transformers import AutoTokenizer
 
+# CHANGE THIS!
 ckpt_path = '/path/to/ckpt/folder'
 pretrained = 'meta-llama/Llama-2-7b-chat-hf'
-ckpt_path = '/home/guanghuiqin/dodo_ckpt/ratio20'
+
 hparams = yaml.load(open(ckpt_path+'/hparams.yaml'), yaml.CLoader)
 
 max_new_tokens = 32
