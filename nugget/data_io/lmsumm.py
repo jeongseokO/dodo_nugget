@@ -18,7 +18,7 @@ class LMSumm(data.Dataset):
             self.data = load_dataset('cnn_dailymail', '3.0.0', split=split)
         else:
             self.data = load_dataset(data_path, split=split)
-        self.tok = AutoTokenizer.from_pretrained('meta-llama/Llama-2-7b-chat-hf', legacy=False, use_fast=False)
+        self.tok = AutoTokenizer.from_pretrained('meta-llama/Llama-3.1-8B-Instruct', legacy=False, use_fast=False)
         if prompt is None:
             self.prompt = '[INST] Summarize the following text with fewer than #NWORD# words: #TEXT# [/INST]\n'
         else:
