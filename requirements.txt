@@ -1,11 +1,11 @@
 torch==2.3.0
-transformers==4.32.0
+transformers>=4.44.0
 lightning==2.0.6
 datasets==3.0.2
 peft==0.4.0
 sentencepiece
 deepspeed==0.10.0
-tokenizers==0.13.3
+tokenizers>=0.15.0
 matplotlib
 pyyaml
 rouge
